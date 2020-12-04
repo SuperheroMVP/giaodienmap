@@ -1,0 +1,98 @@
+*{
+    padding:0;
+    margin: 0;
+}
+.bg-first{
+	background: #ccc;
+	height: 100000vh;
+}
+.row-content-land{
+	margin: 10px 0px;
+    width: 5000px;
+}
+.content-land {
+    display: inline-block;
+   /* border: 2px solid #9fd84a;*/
+   border: 3px solid #1d7101;
+    padding: 5px 10px;
+    border-radius: 2px;
+    vertical-align: top;
+    background: #fff;
+}
+.land{
+	width: auto;
+	height: auto;
+
+}
+.row-land{
+	width: auto;
+	height: auto;
+
+}
+.row-land .item-land{
+  display: inline-block;
+  position: relative;
+}
+.item-land .icon-land{
+	width: 30px;
+	height: 50px;
+	/*background: #9fd84a;*/
+	background: #967207;
+	cursor: pointer;
+	margin: 5px;
+}
+.item-land .icon-land i {
+    color: #fff;
+    width: 100%;
+    position: relative;
+    top: calc(50% - 10px);
+    text-align: center;
+}
+.modal-hover{
+	position: relative;
+}
+.content-modal-hover {
+    position: absolute;
+    content: '';
+    width: 280px;
+    height: auto;
+    padding: 5px 10px;
+    background: #fff;
+    z-index: 10;
+    top: 8px;
+    left: 35px;
+    cursor: pointer;
+	-webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+	display: none;
+}
+.content-modal-hover:after {
+    position: absolute;
+    content: '\f0d9';
+    font-size: 20px;
+    z-index: 10;
+    display: block;
+    top: 8px;
+    left: -7px;
+    font-family: 'FontAwesome';
+    color: #fff;
+}
+.item-modal .content-hover-left{
+	font-weight: 500;
+	font-size: 15px;
+}
+.item-modal .content-hover-right{
+	font-weight: 700;
+	color: #9fd84a;
+}
+.modal-hover:hover > .content-modal-hover{display: block;}
+.icon-land.bg-green {
+    background: #1d7101;
+}
+.icon-land.bg-red {
+    background: red;
+}
+.icon-land.bg-yellow{
+    background: yellow;
+}
