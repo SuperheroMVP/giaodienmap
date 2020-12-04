@@ -2,8 +2,8 @@ function activateMaps() {
 
     let zoomMap = $('.maps-container-inner').ZoomArea({
         zoomLevel:0.1,
-        minZoomLevel: 0.2,
-        maxZoomLevel: 30,
+        minZoomLevel: 0.3,
+        maxZoomLevel: 2.5,
         parentOverflow: 'auto',
         exceptionsZoom: ['marker-all'],
         hideWhileAnimate: ['map-area', 'marker-all'],

@@ -21,7 +21,7 @@
   overflow: hidden !important;
   background: #cccccc;
   z-index: 3;
-  margin-top: 30px;
+/*  margin-top: 30px;*/
 
 }
 
@@ -397,7 +397,7 @@
 
 @media screen and (max-width: 1300px) {
   .maps-container {
-    height: 500px;
+    height: 600px;
     padding-bottom: 0;
   }
 
