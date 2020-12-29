@@ -47,6 +47,9 @@ html, body {
 	cursor: pointer;
 	margin: 5px;
     border-radius: 2px;
+    -webkit-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
 }
 .item-land .icon-land i {
     color: #fff;
@@ -112,7 +115,7 @@ html, body {
 @media (min-width: 576px)
 {
 .modal-dialog {
-    max-width: 600px!important;
+    max-width: 700px!important;
     margin: 1.75rem auto;
 }
 }
@@ -174,18 +177,22 @@ button.btn-style1 {
     height: 200px;
     object-fit: cover;
 }
-.lake_land {
+/*.lake_land {
     width: 300px;
     height: 360px;
-/*    background: dodgerBlue;
-    border-radius: 10px;*/
+    background: dodgerBlue;
+    border-radius: 10px;
+}*/
+.content-land.lake {
+    height: 372px;
 }
 .lake_land {
     width: 300px;
-    height: 338px;
+    height: 340px;
+    position: relative;
 }
 
-.lake_land .lake {
+/*.lake_land .lake {
     width: 220px;
     height: 312px;
     background: dodgerBlue;
@@ -194,8 +201,19 @@ button.btn-style1 {
     margin-top: 21px;
     position: relative;
     overflow: hidden;
+}*/
+.lake_land .lake {
+    width: 220px;
+    height: 320px;
+    background: dodgerBlue;
+    border-radius: 45px;
+    margin: 0 auto;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
-
 .wave {
     position: absolute;
     width: 100%;
@@ -215,4 +233,55 @@ button.btn-style1 {
     100%{
         background-position-x:100px;
     }
+}
+
+form label{
+    color:#222;
+    font-size: 18px;
+    font-weight: 600;
+}
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 300px;
+  border: 1px solid #bc6c25;
+  border-right: none;
+  padding: 5px;
+  height: 40px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #bc6c25;
+}
+.searchTerm::placeholder{
+    color: #bc6c25;
+    font-size: 15px;
+}
+
+.searchTerm:focus{
+  color: #bc6c25;
+}
+
+.searchButton {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #bc6c25;
+  background: #bc6c25;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap {
+    /* width: 100%; */
+    position: absolute;
+    top: 5%;
+    right: -8%;
+    transform: translate(-50%, -50%);
 }
