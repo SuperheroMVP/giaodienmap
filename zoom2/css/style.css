@@ -183,12 +183,12 @@ button.btn-style1 {
     background: dodgerBlue;
     border-radius: 10px;
 }*/
-.content-land.lake {
+/*.content-land.lake {
     height: 372px;
-}
+}*/
 .lake_land {
     width: 300px;
-    height: 340px;
+    height: 360px;
     position: relative;
 }
 
@@ -284,4 +284,22 @@ form label{
     top: 5%;
     right: -8%;
     transform: translate(-50%, -50%);
+}
+.bg-land-green{
+    background: #236e02 !important;
+}
+.content-component1 img,
+.content-component2 img,
+.content-component3 img
+ {
+    display: block;
+    margin: 0px auto;
+}
+
+.d-iflex{
+    display: inline-flex;
+}
+
+.border-left{
+    border-left: 3px solid #fff!important;
 }

@@ -329,7 +329,7 @@
             e.stopPropagation();
         },
         maxScale: 4,
-        minScale: 0.125,
+        minScale: 0.3,
         overflow: 'hidden',
         panOnlyWhenZoomed: false,
         relative: false,
