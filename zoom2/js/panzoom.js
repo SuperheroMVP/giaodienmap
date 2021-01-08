@@ -331,13 +331,13 @@
         maxScale: 4,
         minScale: 0.3,
         overflow: 'hidden',
-        panOnlyWhenZoomed: false,
+        panOnlyWhenZoomed: true,
         relative: false,
         setTransform: setTransform,
         startX: 0,
         startY: 0,
-        startScale: 0.8,
-        step: 0.3,
+        startScale: 0.1,
+        step: 0.1,
         touchAction: 'none'
     };
     function Panzoom(elem, options) {

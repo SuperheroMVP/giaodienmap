@@ -39,15 +39,22 @@ html, body {
   display: inline-block;
   position: relative;
 }
-.item-land .icon-land{
-/*	width: 30px;
-	height: 50px;*/
-	/*background: #9fd84a;*/
-	/*background: #967207;*/
+/*.item-land .icon-land{
     background: #bc6c25;
 	cursor: pointer;
 	margin: 5px;
     border-radius: 2px;
+    -webkit-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+}*/
+.item-land .icon-land {
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 2px;
+    background: url(../images/omo.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     -webkit-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
@@ -56,8 +63,9 @@ html, body {
     color: #fff;
     width: 100%;
     position: relative;
-    top: calc(50% - 10px);
+    top: calc(50% - 15px);
     text-align: center;
+    font-size: 8px;
 }
 .modal-hover{
 	position: relative;
